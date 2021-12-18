@@ -8,9 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void doSignUp() {
-    print("Sign Up");
-  }
+  void doSignUp() {}
 
   void doSignIn() {
     print("Sign In");
@@ -23,12 +21,12 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text("BUKA INVESTMENT"),
-          const ElevatedButton(
-            onPressed: null,
+          ElevatedButton(
+            onPressed: doSignUp,
             child: Text("Sign Up"),
           ),
-          const TextButton(
-            onPressed: null,
+          TextButton(
+            onPressed: doSignIn,
             child: Text("Sign In"),
           ),
         ],
